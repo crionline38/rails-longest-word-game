@@ -9,11 +9,11 @@
       <%
       i=0
       @res.each do |letter| %>
-      <td>
+      <td><div class="cart2" ondrop="drop(event)" ondragover="allowDrop(event)" >
         <div class="cart" id="<%= i %>" draggable="true" ondragstart="drag(event)" >
           <%= letter %></td>
 
-        </div>
+        </div></div>
       <% i+=1
       end %>
     </tr>
@@ -26,7 +26,7 @@
       i=0
       @res.each do |letter| %>
       <td>
-        <div class="cart2" id="r<%= i %>" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+        <div class="cart2" id="r<%= i %>" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
           </td>
 
         </div>
