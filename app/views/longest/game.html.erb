@@ -1,0 +1,47 @@
+<div class="lolo">
+
+<div class="title">
+  <h1>Search th longest word with</h1>
+</div>
+<div class="grid">
+  <table>
+    <tr>
+      <%
+      i=0
+      @res.each do |letter| %>
+      <td>
+        <div class="cart" id="<%= i %>" draggable="true" ondragstart="drag(event)" >
+          <%= letter %></td>
+
+        </div>
+      <% i+=1
+      end %>
+    </tr>
+  </table>
+</div>
+<div class="grid">
+  <table>
+    <tr>
+      <%
+      i=0
+      @res.each do |letter| %>
+      <td>
+        <div class="cart2" id="r<%= i %>" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+          </td>
+
+        </div>
+      <% i+=1
+      end %>
+    </tr>
+  </table>
+
+  <form action="/score" method="GET">
+    <input type="hidden" name="grid" value="<%= @res.join %>">
+    <input type="hidden" name="time" value="<%= @start_time %>">
+    <input type="hidden" id="inp" name="mygrid" placeholder="type your word">
+    <button type="submit">GO</button>
+  </form>
+</div>
+
+
+</div>

@@ -1,0 +1,57 @@
+// Place all the styles related to the longest controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.lolo {
+  background-image: image-url('lolo.jpg');
+  background-size: cover;
+  background-position: center;
+  height : 600px;
+  margin : auto;
+}
+h1 {
+  height: 230px;
+}
+.cart {
+  background-image: image-url('carte.jpg');
+  background-size: cover;
+  height: 130px;
+  width: 100px;
+  font-size: 80px;
+  display: flex;
+  justify-content : center;
+  align-items: center;
+  cursor: pointer;
+}
+.cart2 {
+  background-size: cover;
+  height: 128px;
+  width: 98px;
+  font-size: 80px;
+  display: flex;
+  justify-content : center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.title {
+  font-family: 'Concert One', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+.grid {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+button {
+  font-family: 'Concert One', cursive;
+  background-color: #DD8822;
+  font-size: 20px;
+  height: 80px;
+  width: 100px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}

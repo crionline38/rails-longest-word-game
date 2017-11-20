@@ -1,0 +1,4 @@
+<div class="title"><h1><%= @res[:message] %></h1></div>
+<div class="title">Score : <%= @res[:score] %></div>
+<div class="title"> moyenne : <%= session[:score].reduce(:+) / session[:score].size %></div>
+<div class="title"><a href="/game"><button>RESTART</button></a></div>

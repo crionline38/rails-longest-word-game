@@ -14,3 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+
+    document.getElementById('inp').value = document.getElementById('r0').innerText.charAt(0)
+    + document.getElementById('r1').innerText.charAt(0)
+    + document.getElementById('r2').innerText.charAt(0)
+    + document.getElementById('r3').innerText.charAt(0)
+    + document.getElementById('r4').innerText.charAt(0)
+    + document.getElementById('r5').innerText.charAt(0)
+    + document.getElementById('r6').innerText.charAt(0)
+    + document.getElementById('r7').innerText.charAt(0)
+    + document.getElementById('r8').innerText.charAt(0);
+}
